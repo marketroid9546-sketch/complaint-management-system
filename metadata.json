@@ -1,0 +1,6 @@
+{
+  "name": "MTJ Complaint Management System",
+  "description": "Bilingual complaint management and safeguarding portal for AAS Lab, MTJ Foundation, Alhasanain Schools, and Alhasanain College.",
+  "requestFramePermissions": ["microphone", "camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

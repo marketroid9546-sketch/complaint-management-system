@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-urdu: 'Noto Nastaliq Urdu', serif, system-ui;
+    --font-latin: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-latin);
+  }
+
+  [dir="rtl"] {
+    font-family: var(--font-urdu);
+  }
+
+  /* When dir="rtl", ensure headings and buttons have ample line height for Nastaliq */
+  [dir="rtl"] h1,
+  [dir="rtl"] h2,
+  [dir="rtl"] h3,
+  [dir="rtl"] p,
+  [dir="rtl"] span,
+  [dir="rtl"] button {
+    line-height: 1.9;
+  }
+}
+
+.font-urdu {
+  font-family: 'Noto Nastaliq Urdu', serif, system-ui;
+}
+
+.font-latin {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+/* Custom scrollbar for clean clinical UI */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f5f5f4;
+}
+::-webkit-scrollbar-thumb {
+  background: #d6d3d1;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a29e;
+}
+
